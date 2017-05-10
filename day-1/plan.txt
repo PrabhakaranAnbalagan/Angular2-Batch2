@@ -1,0 +1,31 @@
+
+
+
+
+JavaScript
+
+
+  ref-1 : exploringjs.com
+
+         a. Speaking JS
+         b. Exploring ES6
+
+  ref-2 : MDN JavaScript
+
+  --------------------------------------
+
+  JavaScript
+
+      - data-types
+      - execution context
+      - function-depth
+      - 'this' keyword
+      - closures
+      - Inheritance
+      - objects-depth
+      - ES6 New Features
+      - Concurrency Model with EventLoop
+      - best practices
+
+
+  ----------------------------------------

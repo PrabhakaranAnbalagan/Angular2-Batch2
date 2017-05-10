@@ -1,0 +1,54 @@
+
+ES6
+
+
+New-Syntax
+------------
+
+    1. let,const keywords with block-scope
+    2. Arrow Function
+    3. Rest Parameter
+    4. Default FUnction paramaters
+    5. Spread Operator
+    6. String Interpolation
+    7. Binary & Octal values
+    8. Destructuring
+    9. for-of loop
+    10. Iterators & Generators
+
+    etc...
+
+OO Concepts
+-------------
+
+    1. class syntax    
+
+JS modules
+--------------
+
+    2. ES6 Modules
+
+Data
+---------------
+
+    1. Set
+    2. Map
+    3. Typed Arrays        
+
+New Primitive Type
+------------------
+
+    1. Symbol
+
+API Extensions
+------------------        
+
+
+
+---------------------------------------------
+
+npm config set proxy htt://proxy.cognizant.com:6050
+npm config set strict-ssl false
+
+
+---------------------------------------------
