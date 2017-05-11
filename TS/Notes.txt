@@ -1,0 +1,8 @@
+
+
+
+ limitation on .js-lang for develpmenet-stage
+ --------------------------------------------
+
+ -> code is difficult to debug due to dynamic data-types
+

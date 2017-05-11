@@ -1,0 +1,78 @@
+
+
+till Es5, .js-lang dont have module-standards & module-loaders
+
+
+
+problems in .js-devlopement without module-standards & module-loaders
+
+
+    --> global naming collisions
+    --> loading modules based dependency hierarcy
+    --> working with different third-pary .js modules is difficult
+
+
+    -----------------------------------------------
+
+    Soln : using best module-standard(s) & using module-loader
+
+
+
+    module standards
+
+
+    from third-party
+
+    --> AMD ( Async Module Definition )
+    --> commonJS ( popular standard ) 
+    --> UMD
+    --> SystemJS 
+    ....
+
+    from ECMAScript community
+
+    --> ES6 modules
+
+
+    ------------------------------------------------
+
+
+
+
+    commonJS standard
+
+
+    --> every .js file is a module
+    --> all var & func in a .js file are private to that module
+    --> to export any member , shud use "module.exports"
+    --> to import any member , shud use "require()"
+    --> can group related modules into packages with description file ( package.json)
+
+
+   imp-note:  Node.js  uses commonJS as a default module standards
+
+    ---------------------------------------------
+
+    ES6 modules
+
+    --> every .js file is a module
+    --> all var & func in a .js file are private to that module
+    --> to export any member , shud use "export" keyword
+    --> to import any member , shud use "import"
+    --> can group related modules into packages 
+
+
+     ---------------------------------------------
+
+
+    Module Bundlers & Loaders
+
+        
+
+        -> Browserify
+
+        -> Grunt
+
+        -> Gulp
+
+        -> Webpack
