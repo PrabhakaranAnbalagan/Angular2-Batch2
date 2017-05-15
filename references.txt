@@ -1,0 +1,16 @@
+
+
+  Javascript  
+ -----------------------------------------
+
+  1. MDN Javascript
+
+  2. http://exploringjs.com/ ( 2 books )
+
+  -----------------------------------------
+
+  TypeScript
+
+  1. https://www.typescriptlang.org/
+
+  ---------------------------------------

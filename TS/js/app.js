@@ -1,43 +1,30 @@
-var Category;
-(function (Category) {
-    Category[Category["LANGUAGE"] = 0] = "LANGUAGE";
-    Category[Category["FRAMEWORK"] = 1] = "FRAMEWORK";
-    Category[Category["OTHER"] = 2] = "OTHER";
-})(Category || (Category = {}));
-;
-function getAllBooks() {
-    var books = [
-        { title: 'javascript', author: 'Nag', avaliable: true, category: Category.LANGUAGE },
-        { title: 'typescript', author: 'Ria', avaliable: false, category: Category.LANGUAGE },
-        { title: 'angular', author: 'Nag', avaliable: true, category: Category.FRAMEWORK }
-    ];
-    return books;
-}
-//----------------------------------------------------------
-// let nagBooks=getAllBooks().filter(function (book) { 
-//     return book.author === "Nag";
-// });
-// nagBooks.forEach(function (book) { 
-//     console.log(book.title);
-// });
-//----------------------------------------------------------
-// let nagBooks = getAllBooks().filter((book) => book.author === "Nag");
-// nagBooks.forEach((book) => { console.log(book.title); });
-//----------------------------------------------------------
-// Function Types  in ts
-var greetFunc; // func type
-function sayHello(name) {
-    return "hello " + name;
-}
-function sayHi(name) {
-    return "hi " + name;
-}
-function greet(name) {
-    return "hi " + name;
-}
-function func() { }
-greetFunc = sayHello;
-greetFunc = sayHi;
-greetFunc = greet;
-// greetFunc = func;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+console.log('-main-');
+// import { productId,productName } from './pack1/mod1';
+// console.log(productId);
+// console.log(productName);
+// or
+// import { productId as id, productName as name } from './pack1/mod1';
+// console.log(id);
+// console.log(name);
+// or
+// import * as mod1 from './pack1/mod1';
+// console.log(mod1.productId);
+// console.log(mod1.productName);
+//--------------------------------------------------
+// import { productId,productName } from './pack1/mod1';
+// console.log(productId);
+// console.log(productName);
+// productId = 1211323; // cant mutate reference imported members
+//--------------------------------------------------
+// import { product } from './pack1/mod1';
+// // product = null;
+// product.id = 123123;
+// product.name = "asdasdad";
+//--------------------------------------------------
+var mod1_1 = require("./pack1/mod1");
+console.log(mod1_1.default);
+console.log(mod1_1.productName);
+console.log(mod1_1.productPrice);
 //# sourceMappingURL=app.js.map

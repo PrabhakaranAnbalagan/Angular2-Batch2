@@ -1,58 +1,46 @@
 
 
+console.log('-main-');
 
-enum Category { "LANGUAGE", "FRAMEWORK", "OTHER" };
- 
-function getAllBooks() {
-    let books = [
-        { title: 'javascript', author: 'Nag', avaliable: true,category:Category.LANGUAGE },
-        { title: 'typescript', author: 'Ria', avaliable: false ,category:Category.LANGUAGE},
-        { title: 'angular', author: 'Nag', avaliable: true,category:Category.FRAMEWORK }
-    ]
-    return books;
-}
+// import { productId,productName } from './pack1/mod1';
 
-//----------------------------------------------------------
-// let nagBooks=getAllBooks().filter(function (book) { 
-//     return book.author === "Nag";
-// });
-
-// nagBooks.forEach(function (book) { 
-//     console.log(book.title);
-// });
-
-//----------------------------------------------------------
-
-// let nagBooks = getAllBooks().filter((book) => book.author === "Nag");
-// nagBooks.forEach((book) => { console.log(book.title); });
+// console.log(productId);
+// console.log(productName);
 
 
-//----------------------------------------------------------
+// or
+
+// import { productId as id, productName as name } from './pack1/mod1';
+
+// console.log(id);
+// console.log(name);
+
+// or
+
+// import * as mod1 from './pack1/mod1';
+// console.log(mod1.productId);
+// console.log(mod1.productName);
+
+//--------------------------------------------------
+// import { productId,productName } from './pack1/mod1';
+
+// console.log(productId);
+// console.log(productName);
+
+// productId = 1211323; // cant mutate reference imported members
+
+//--------------------------------------------------
+
+// import { product } from './pack1/mod1';
+// // product = null;
+
+// product.id = 123123;
+// product.name = "asdasdad";
 
 
-// Function Types  in ts
+//--------------------------------------------------
 
-
-let greetFunc : (string) => string;  // func type
-
-
-function sayHello(name) {
-    return "hello "+name
-}
-
-function sayHi(name) {
-    return "hi "+name
-}
-
-function greet(name) {
-    return "hi "+name
-}
-
-function func() { }
-
-
-greetFunc= sayHello;
-greetFunc = sayHi
-greetFunc= greet;
-
-// greetFunc = func;
+import prodId, { productName,productPrice} from './pack1/mod1';
+console.log(prodId);
+console.log(productName);
+console.log(productPrice);

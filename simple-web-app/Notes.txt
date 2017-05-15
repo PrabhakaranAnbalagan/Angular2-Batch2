@@ -1,0 +1,105 @@
+
+
+
+  what .js-lang can do on HTML-pages in browser-side?
+
+  using browser provided Web-APIs, .js-lang can bring any dynamic activity...
+
+  provided Web-APIs ==> e.g DOM , XHR , Timer , HTML5 APIs etc... based on w3c standards
+
+  using DOM
+  -----------
+  --> can create/retreive/update/delete HTML elements
+  --> can change element's text or inner content
+  --> can change element's style
+  --> can change element's attributes/properties
+  --> can listen events on elements
+  --> can create rich-UI components
+  ......
+
+  using XHR
+  -----------
+  --> can communicate with server-side async, update response in existing page ( AJAX )
+
+  using Timer API
+  ----------------
+  --> can timer functions
+
+
+  HTML5 APIs
+  ----------
+
+    -> https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5
+
+
+---------------------------------------------------------
+
+
+
+problems with plain-js in front-end appln dev
+--------------------------------------------
+
+
+  --> browser compatibility issues due to Web API impln across browsers
+  --> performance issues ( e.g DOM Manipulation )
+  --> memory management ( cleaning un-used DOM elements , un-registering event listeners)
+  --> data-binding  (  View <===> Model ) is manual
+  --> code oraganication is difficult
+  --> etc..
+
+  --> too much code for simple oprn
+  ------------------------------------------
+
+
+  Soln :
+
+    shud use , .js libraries and F.Ws
+
+
+
+    1. jQuery  ==> DOM utility libraries
+
+
+      limitations with jQuery
+      --------------------
+
+      --> close to DOM
+      --> when view changes , need to do .js code change
+      --> data-binding is manual
+      --> code oraganization manual
+
+
+     --------------------------------------------
+
+
+     MVC / MVVM based JS. F.W
+
+     -> Backbone
+     -> Knockout
+     -> Angular 1.x
+
+     etc..
+
+     UI component based F.Ws / Toolkits
+
+     -> DOJO
+     -> EXT JS  ( commerical )
+
+     etc...
+
+     --------------------------------------------
+
+     Component ( custom elements ) Based JS F.Ws
+     -------------------------------------------------------
+
+
+     1. React 
+
+     2. Angular ( our focus )
+
+     3. PolymerJS
+
+     4. Vue 
+
+
+     ---------------------------------------------------

@@ -1,0 +1,26 @@
+
+
+if ur behind cts proxy , to use npm
+-------------------------------------
+
+npm config set proxy http://proxy.cognizant.com:6050
+npm config set strict-ssl false
+
+
+
+--------------------------------------------------
+
+
+component based arc
+
+
+  ==> component shud have single reponsiblity
+
+
+
+  e.g
+
+    AppCompoment
+        ->ProductList
+
+------------------------------------------------------
