@@ -36,21 +36,28 @@
             <p>{{review.comment}}</p>
           </div>
           <hr/>
-          <form name="reviewForm" novalidate>
-            <div class="form-group">
-              <label>Author</label>
-              <select class="form-control"></select>
+          <div class="panel panel-primary">
+            <div class="panel-heading">Review Form </div>
+            <div class="panel-body">
+              <form name="reviewForm" #reviewForm="ngForm" novalidate (submit)="handleReviewFormSubmit($event)">
+                <div class="form-group">
+                  <label>Stars</label>
+                  <select class="form-control"  name="stars" [(ngModel)]="newReview.stars">
+                    <option *ngFor="let i of [1,2,3,4,5]">{{i}}</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Email</label>
+                  <input class="form-control" type="email" name="author" [(ngModel)]="newReview.author">
+                </div>
+                <div class="form-group">
+                  <label>Comment</label>
+                  <textarea name="body" rows="5" cols="35" class="form-control" name="comment" [(ngModel)]="newReview.comment"></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit</button>
+              </form>
             </div>
-            <div class="form-group">
-              <label>Email</label>
-              <input class="form-control" type="email">
-            </div>
-            <div class="form-group">
-              <label>Comment</label>
-              <textarea name="body" rows="5" cols="35" class="form-control" required="required"></textarea>
-            </div>
-            <button class="btn btn-primary" type="submit">Submit</button>
-          </form>
+          </div>
         </div>
       </section>
     </div>

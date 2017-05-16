@@ -13,10 +13,17 @@ var core_1 = require("@angular/core");
 var product_1 = require("../model/product");
 var ProductComponent = (function () {
     function ProductComponent() {
+        this.newReview = { stars: 1, author: '', comment: '' };
         this.qty = 0;
         this.currentTab = 1;
     }
     ProductComponent.prototype.ngOnInit = function () {
+    };
+    ProductComponent.prototype.handleReviewFormSubmit = function (event, reviewForm) {
+        event.preventDefault();
+        // send this review to server
+        this.product.reviews.push(this.newReview); // adding localy
+        this.newReview = { stars: 1, author: '', comment: '' };
     };
     ProductComponent.prototype.tabChange = function (event, tabIndex) {
         event.preventDefault();

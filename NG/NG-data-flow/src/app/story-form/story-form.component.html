@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col-md-6 col-sm-6 col-xs-8">
+    <div class="panel panel-danger">
+      <div class="panel-heading">New Story Form</div>
+      <div class="panel-body">
+        
+        <form id="story-form" #storyForm="ngForm" novalidate (submit)="handleSubmit()">
+          <div class="form-group" [class.has-error]="author.invalid && author.touched">
+            <label>Name:</label>
+            <input #author="ngModel" class="form-control" 
+                    name="author" 
+                    autofocus
+                    required 
+                    [ngModel]="newStory.author" 
+                    (ngModelChange)="newStory.author=$event"/>
+              <div class="help-block" *ngIf="author.invalid && author.touched">
+              Name is required
+             </div>     
+          </div>
+          <div class="form-group">
+            <label>Message:</label>
+            <textarea class="form-control" name="message" [(ngModel)]="newStory.message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">post</button>
+        </form>
+        
+        <hr/>
+        <pre>{{newStory|json}}</pre>
+        <hr/>
+        
+      
+
+      </div>
+    </div>
+  </div>
+</div>

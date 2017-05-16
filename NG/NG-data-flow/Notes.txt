@@ -1,0 +1,58 @@
+
+
+  NG -> Data Flow
+
+  --> Uni-Directional data flow
+
+
+     parent-component        child-component
+
+                    props
+                  -------------->
+                  
+                    event
+                  <--------------
+
+
+    e.g : plain HTML              
+
+
+    <div>
+        <button name="hit me"  onclick="parentCompHandler()"></button>
+    </div>
+
+    ----------------------------------------------------------------------
+
+    #1
+
+    counter-app
+    ------------
+
+    AppComponent
+        - count:number=0;
+
+        <display count="count"></display>
+
+    ----------------------------------------------------------------------
+
+
+    #2  facebook , to post our story(ies)
+
+        step-1 : break UI into small component(s)
+
+
+            e.g
+
+
+            1. AppComponent
+
+                a. HeaderComponent
+                b. NewStoryFormComponent
+                c. StoryListComponent
+                    i. Story
+
+         -----------------------------------------------------           
+
+         ste-2 : build static components 
+
+         ------------------------------------------------------

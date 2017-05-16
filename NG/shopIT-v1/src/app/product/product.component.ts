@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { Product } from '../model/product';
 
 @Component({
@@ -11,6 +12,8 @@ export class ProductComponent implements OnInit {
   @Input()
   product: Product;
 
+  newReview: any = { stars: 1, author: '', comment: '' };
+
   @Input()
   idx: number;
 
@@ -20,6 +23,13 @@ export class ProductComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  handleReviewFormSubmit(event: any, reviewForm: NgForm) {
+    event.preventDefault();
+    // send this review to server
+    this.product.reviews.push(this.newReview);  // adding localy
+    this.newReview = { stars: 1, author: '', comment: '' };
   }
 
   tabChange(event: any, tabIndex: number) {
